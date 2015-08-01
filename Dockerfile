@@ -11,7 +11,6 @@ RUN wget --no-check-certificate -c --header "Cookie: oraclelicense=accept-secure
 RUN rpm -ivh /tmp/jdk-8u45-linux-x64.rpm
 RUN rm /tmp/jdk-8u45-linux-x64.rpm
 RUN alternatives --set java /usr/java/jdk1.8.0_45/jre/bin/java
-RUN alternatives --set javac /usr/java/jdk1.8.0_45/jre/bin/javac
 
 ENV JAVA_HOME /usr/java/jdk1.8.0_45
 
